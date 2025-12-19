@@ -77,7 +77,7 @@ const LandingPage = () => {
             <div className="container">
                 {/* Projects Section */}
                 <section id="projects" style={{ padding: '4rem 0' }}>
-                    <h2 className="section-title">Our team Projects</h2>
+                    <h2 className="section-title">Our Projects</h2>
                     {projects.length === 0 ? <p style={{ textAlign: 'center' }}>No projects yet. Add some in the Admin Panel.</p> : (
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
                             {projects.map(project => (
@@ -167,3 +167,4 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
