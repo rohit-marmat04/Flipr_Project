@@ -33,6 +33,14 @@ If you prefer to install them manually or encounter issues with the script:
     cd ..
     ```
 ---
+## 📸 Screenshots
+### Landing Page
+![Landing Page](./screenshots/landing-page.png)
+*The public facing page displaying projects and clients.*
+### Admin Panel
+![Admin Panel](./screenshots/admin-panel.png)
+*The private dashboard for managing content.*
+---
 ## ⚙️ Configuration
 1.  Navigate to the `server` directory.
 2.  Open (or create) the `.env` file.
