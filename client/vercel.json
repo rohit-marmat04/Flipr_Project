@@ -2,11 +2,12 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "https://YOUR-RENDER-BACKEND-URL.onrender.com/api/$1"
+            "destination": "https://flipr-project-9qdg.onrender.com"
         },
         {
             "source": "/(.*)",
             "destination": "/index.html"
         }
     ]
+
 }
