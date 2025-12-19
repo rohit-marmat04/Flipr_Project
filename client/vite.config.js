@@ -6,8 +6,9 @@ export default defineConfig({
     plugins: [react()],
     server: {
         proxy: {
-            '/api': 'https://flipr-project-9qdg.onrender.com'
+            '/api': 'http://localhost:5000'
         }
     }
 })
+
 
