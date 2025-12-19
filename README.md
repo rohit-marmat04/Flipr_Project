@@ -35,7 +35,7 @@ If you prefer to install them manually or encounter issues with the script:
 ---
 ## 📸 Screenshots
 ### Landing Page
-![Landing Page](./screenshots/landing-page.png)
+![Landing Page](client/assets/Screenshot%20(10).png)
 *The public facing page displaying projects and clients.*
 ### Admin Panel
 ![Admin Panel](./screenshots/admin-panel.png)
