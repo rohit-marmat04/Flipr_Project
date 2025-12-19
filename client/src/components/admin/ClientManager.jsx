@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { convertToBase64 } from '../../utils/imageHandler';
-
 const ClientManager = () => {
     const [formData, setFormData] = useState({ name: '', description: '', designation: '', image: '' });
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
-
     const handleImageUpload = async (e) => {
         const file = e.target.files[0];
         if (file) {
@@ -14,7 +12,6 @@ const ClientManager = () => {
             setFormData({ ...formData, image: base64 });
         }
     };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
@@ -28,7 +25,6 @@ const ClientManager = () => {
         }
         setLoading(false);
     };
-
     return (
         <div className="card">
             <h3 style={{ marginBottom: '1.5rem' }}>Add Happy Client</h3>
@@ -41,7 +37,6 @@ const ClientManager = () => {
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
                 />
-
                 <label>Designation</label>
                 <input
                     type="text"
@@ -50,7 +45,6 @@ const ClientManager = () => {
                     placeholder="e.g. CEO, Developer"
                     required
                 />
-
                 <label>Testimonial / Description</label>
                 <textarea
                     value={formData.description}
@@ -58,11 +52,9 @@ const ClientManager = () => {
                     required
                     rows="4"
                 />
-
                 <label>Client Image</label>
                 <input type="file" onChange={handleImageUpload} accept="image/*" required />
                 {formData.image && <img src={formData.image} alt="Preview" style={{ width: '100px', height: '100px', objectFit: 'cover', marginTop: '1rem', borderRadius: '50%' }} />}
-
                 <button type="submit" className="btn btn-primary" style={{ marginTop: '1rem' }} disabled={loading}>
                     {loading ? 'Adding...' : 'Add Client'}
                 </button>
@@ -70,5 +62,4 @@ const ClientManager = () => {
         </div>
     );
 };
-
 export default ClientManager;
